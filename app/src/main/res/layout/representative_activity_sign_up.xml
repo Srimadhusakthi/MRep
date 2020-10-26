@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.mrep.doctor.model.LoginRequestModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Overlay_toolbar" />
+
+        <include
+            layout="@layout/custom_toolbar"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:theme="@style/Theme.MaterialComponents.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8dsp"
+                    android:text="@string/profile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dsp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8dsp"
+                    android:layout_marginRight="@dimen/_8dsp"
+                    android:text="Your profile was developed with details received from invites. Please review and modify,if required."
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8dsp"
+                    android:background="@color/gray"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:padding="@dimen/_8dsp"
+                    android:text="@string/my_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold"
+                    app:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20dsp"
+                    android:orientation="vertical">
+
+                    <!--My Information-->
+                    <include layout="@layout/fragment_representative_myinformation" />
+
+                    <!--Company Information-->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:background="@color/gray"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:padding="@dimen/_8dsp"
+                        android:text="@string/company_information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14dsp"
+                        android:textStyle="bold"
+                        app:textAllCaps="true" />
+
+                    <include layout="@layout/fragment_representative_company_information" />
+
+                    <!--Manager Information-->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:background="@color/gray"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:padding="@dimen/_8dsp"
+                        android:text="@string/manager_information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14dsp"
+                        android:textStyle="bold"
+                        app:textAllCaps="true" />
+
+                    <!--First  Line-->
+
+                    <include layout="@layout/fragment_representative_firstline_manger" />
+                    <!--Second  Line-->
+
+                    <include layout="@layout/fragment_representative_secondline_manger" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10dsp"
+                        android:text="@string/mrep_maintance_data" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dsp"
+                        android:text="@string/please_read_terms_conditions" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_8dsp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/read_understood" />
+
+
+                    </LinearLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_signUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:background="@color/btn_bg"
+                        android:text="@string/submit"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

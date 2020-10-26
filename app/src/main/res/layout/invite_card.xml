@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10dsp"
+    android:elevation="@dimen/_10dsp"
+    app:cardCornerRadius="@dimen/_10dsp"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10dsp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr SriMadhu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16dsp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dsp"
+                    android:layout_weight="1"
+                    android:text="@string/company"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dsp"
+                    android:layout_weight="1"
+                    android:text="@string/division"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dsp"
+                    android:layout_weight="1"
+                    android:text="GenMark"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/division_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dsp"
+                    android:layout_weight="1"
+                    android:text="Max"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14dsp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/current_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16dsp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10dsp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dsp"
+                android:layout_toLeftOf="@+id/approve"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_red"
+                android:drawableLeft="@drawable/ic_check_circle_small"
+                android:gravity="center"
+                android:text="@string/block"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12dsp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_green"
+                android:drawableLeft="@drawable/ic_check_circle_small"
+                android:gravity="center"
+                android:text="@string/approve"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12dsp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

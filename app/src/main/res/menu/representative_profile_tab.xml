@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_my_information"
+        android:title="@string/my_information" />
+    <item
+        android:id="@+id/nav_manager_information"
+        android:title="@string/manager_info" />
+    <item
+        android:id="@+id/nav_account_setting"
+        android:title="@string/account_setting" />
+</menu>

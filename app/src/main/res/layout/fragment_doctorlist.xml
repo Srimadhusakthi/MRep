@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.mrep.doctor.model.LoginRequestModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_doctor_list_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:itemBackground="@color/white"
+                app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+                app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/representative_doctor_list_tab" />
+
+            <include layout="@layout/fragment_load_container" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:tint="@color/white"
+            android:layout_marginRight="@dimen/_16dsp"
+            android:layout_marginBottom="@dimen/_70sp"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </RelativeLayout>
+</layout>

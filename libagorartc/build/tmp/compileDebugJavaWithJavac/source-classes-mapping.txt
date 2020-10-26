@@ -1,0 +1,2 @@
+io/agora/rtc/BuildConfig.java
+ io.agora.rtc.BuildConfig

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LoginActivity">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.mrep.doctor.viewmodel.LoginViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_26dsp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26dsp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dsp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8dsp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="@string/welcome_back"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16dsp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:hint="@string/email"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@style/error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@={handler.mUserEmail}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:hint="@string/enter_password"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{handler.password}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:text="@string/sign_in"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12dsp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/btn_bg" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:gravity="center"
+                        android:text="@string/forgot_your_password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12dsp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/by_clicking_here"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10dsp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_6dsp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="@string/customer_agreement"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12dsp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:gravity="center"
+                        android:text="@string/or"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16dsp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8dsp"
+                        android:gravity="center"
+                        android:text="Create an Account \n as"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12dsp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8dsp"
+                        android:layout_marginRight="@dimen/_8dsp"
+                        android:layout_marginBottom="@dimen/_8dsp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_doctor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_4dsp"
+                            android:layout_weight="1"
+                            android:text="@string/doctor"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12dsp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/btn_bg" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_representative"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8dsp"
+                            android:layout_marginLeft="@dimen/_4dsp"
+                            android:layout_weight="1"
+                            android:background="@color/btn_bg"
+                            android:text="@string/representative"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12dsp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

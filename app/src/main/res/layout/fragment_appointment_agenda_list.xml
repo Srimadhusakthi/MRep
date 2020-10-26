@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayName"
+        android:layout_toRightOf="@+id/dayName"
+        android:layout_marginLeft="@dimen/_8dsp"
+        android:layout_marginRight="@dimen/_8dsp"
+        android:background="@drawable/rectangle_green"
+        android:padding="@dimen/_8dsp"
+        android:text="A Test event from android \n(4.00 PM to 4.15 PM) "
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14dsp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayName"
+        android:layout_margin="@dimen/_8dsp"
+        android:layout_toRightOf="@+id/dayName"
+        android:background="@drawable/rectangle_green"
+        android:padding="@dimen/_8dsp"
+        android:text="A Test event \n(6.26 PM to 6.35 PM) "
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14dsp" />
+</LinearLayout>

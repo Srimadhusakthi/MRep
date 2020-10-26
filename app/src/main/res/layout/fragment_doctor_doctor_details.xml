@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="login"
+            type="com.mrep.doctor.model.LoginRequestModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_50sp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="@dimen/_8dsp"
+        app:cardCornerRadius="@dimen/_8dsp"
+        android:layout_margin="@dimen/_8dsp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dsp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/doctor_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/_10dsp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/gray"
+                    android:src="@drawable/ic_profile_white" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10dsp"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:text="SriMadhu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dsp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/doctor_specialist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctor_name"
+                    android:layout_marginLeft="@dimen/_10dsp"
+                    android:layout_marginTop="@dimen/_6dsp"
+                    android:layout_toRightOf="@+id/profile_img"
+                    android:text="Ortho"
+                    android:textSize="@dimen/_14dsp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/doctor_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10dsp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2dsp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="@string/hospital_clinic"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="@string/medical_council_registration_no"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="Hedge Clinic"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/medical_council_registration_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="987976"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10dsp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2dsp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="@string/state_of_registration"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="@string/city"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/state_of_registration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="TamilNadu"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:layout_weight="1"
+                            android:text="Kaniyur"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10dsp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2dsp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:text="@string/mrepnumber"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mrep_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2dsp"
+                            android:text="Yes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14dsp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_view_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8dsp"
+                    android:backgroundTint="@color/btn_bg"
+                    android:text="@string/view_calendar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12dsp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

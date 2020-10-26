@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mrep.doctor.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_doctor_home" />
+
+
+    <fragment
+        android:id="@+id/call_planner"
+        android:name="com.mrep.doctor.fragment.callplanner.CallPlannerFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_call_planner_to_add_event"
+            app:destination="@id/add_event" />
+        <action
+            android:id="@+id/action_call_planner_to_update_time_slot"
+            app:destination="@id/update_time_slot" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/appointment"
+        android:name="com.mrep.doctor.fragment.appointment.AppointmentFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_appointment">
+
+        <action
+            android:id="@+id/action_appointment_to_reschedule_event"
+            app:destination="@id/reschedule_event" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.mrep.doctor.fragment.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_doctor_profile">
+        <action
+            android:id="@+id/action_profile_to_change_password"
+            app:destination="@id/change_password" />
+        <action
+            android:id="@+id/action_profile_to_edit"
+            app:destination="@id/edit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit"
+        android:name="com.mrep.doctor.fragment.editprofile.EditFragment"
+        android:label="@string/edit"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/change_password"
+        android:name="com.mrep.doctor.fragment.changepassword.ChangePasswordFragment"
+        android:label="@string/change_password"
+        tools:layout="@layout/update_password" />
+
+    <fragment
+        android:id="@+id/add_event"
+        android:name="com.mrep.doctor.fragment.callplanner.addtimeslot.AddTimeSlot"
+        android:label="@string/addEvent"
+        tools:layout="@layout/fragment_callplanner_add_timeslot" />
+
+    <fragment
+        android:id="@+id/reschedule_event"
+        android:name="com.mrep.doctor.fragment.appointment.rescheduleevent.RescheduleEvent"
+        android:label="@string/reschedule_event"
+        tools:layout="@layout/fragment_appointment_reschedule_event">
+        <action
+            android:id="@+id/action_reschedule_event_to_modify_event"
+            app:destination="@id/modify_event" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/modify_event"
+        android:name="com.mrep.doctor.fragment.appointment.modifyappoinment.ModifyMrepAppointment"
+        android:label="@string/modify_event"
+        tools:layout="@layout/fragment_appointment_modify" />
+
+    <fragment
+        android:id="@+id/update_time_slot"
+        android:name="com.mrep.doctor.fragment.callplanner.updatetimeslot.UpdateTimeSlot"
+        android:label="@string/update_time_slot"
+        tools:layout="@layout/fragment_callplanner_update_timeslot" />
+
+
+    <fragment
+        android:id="@+id/nav_doctor_notification"
+        android:name="com.mrep.doctor.fragment.notification.DoctorNotification"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification_doctor" />
+
+
+</navigation>

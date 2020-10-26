@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/representative_mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mrep.representative.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_representative_home" />
+    <fragment
+        android:id="@+id/nav_doctor_list"
+        android:name="com.mrep.representative.fragment.doctorlist.DoctorListFragment"
+        android:label="@string/doctor_list"
+        tools:layout="@layout/fragment_doctorlist">
+        <action
+            android:id="@+id/action_nav_doctor_list_to_nav_new_doctor_list"
+            app:destination="@id/nav_new_doctor_list" />
+        <action
+            android:id="@+id/action_nav_doctor_list_to_nav_approve_doctor_list"
+            app:destination="@id/nav_approve_doctor_list" />
+        <action
+            android:id="@+id/action_nav_doctor_list_to_nav_pending_doctor_list"
+            app:destination="@id/nav_pending_doctor_list" />
+        <action
+            android:id="@+id/action_nav_doctor_list_to_nav_blocked_doctor_list"
+            app:destination="@id/nav_blocked_doctor_list" />
+        <action
+            android:id="@+id/action_nav_doctor_list_to_doctor_details"
+            app:destination="@id/doctor_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_appointment"
+        android:name="com.mrep.representative.fragment.appointment.AppointmentFragment"
+        android:label="@string/appointment"
+        tools:layout="@layout/fragment_appointment">
+        <action
+            android:id="@+id/action_nav_appointment_to_appointment_info"
+            app:destination="@id/appointment_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.mrep.representative.fragment.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_representative_profile">
+        <action
+            android:id="@+id/action_nav_profile_to_change_password"
+            app:destination="@id/change_password" />
+        <action
+            android:id="@+id/action_nav_profile_to_edi_profile"
+            app:destination="@id/edi_profile" />
+        <action
+            android:id="@+id/action_nav_profile_to_edi_manager_informarmationprofile"
+            app:destination="@id/edi_manager_informarmationprofile" />
+    </fragment>
+
+
+    <!--Doctor List-->
+
+    <fragment
+        android:id="@+id/nav_new_doctor_list"
+        android:name="com.mrep.representative.fragment.doctorlist.newdoctorlist.NewDoctorFragment"
+        android:label="@string/new_txt"
+        tools:layout="@layout/fragment_doctorlist_new" />
+
+    <fragment
+        android:id="@+id/nav_approve_doctor_list"
+        android:name="com.mrep.representative.fragment.doctorlist.approved.ApprovedFragment"
+        android:label="@string/approved"
+        tools:layout="@layout/fragment_doctorlist_approved"></fragment>
+
+
+    <fragment
+        android:id="@+id/nav_pending_doctor_list"
+        android:name="com.mrep.representative.fragment.doctorlist.pending.PendingFragment"
+        android:label="@string/pending"
+        tools:layout="@layout/fragment_doctorlist_pending" />
+
+
+    <fragment
+        android:id="@+id/nav_blocked_doctor_list"
+        android:name="com.mrep.representative.fragment.doctorlist.blocked.BlockedFragment"
+        android:label="@string/blocked"
+        tools:layout="@layout/fragment_doctorlist_blocked" />
+
+
+    <fragment
+        android:id="@+id/nav_representative_notification"
+        android:name="com.mrep.representative.fragment.notification.RepresentativeNotification"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification_representative" />
+
+    <fragment
+        android:id="@+id/profile_account_setting"
+        android:name="com.mrep.representative.fragment.profile.AccountSettingInformation"
+        android:label="@string/account_setting"
+        tools:layout="@layout/fragment_representative_profile_account_setting" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/change_password"
+        android:name="com.mrep.representative.fragment.changepassword.ChangePasswordFragment"
+        android:label="@string/change_password"
+        tools:layout="@layout/update_password" />
+
+    <fragment
+        android:id="@+id/edi_profile"
+        android:name="com.mrep.representative.fragment.editprofile.EditProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_representative_edit_profile" />
+
+
+    <fragment
+        android:id="@+id/edi_manager_informarmationprofile"
+        android:name="com.mrep.representative.fragment.editprofile.EditManagerInformationFragment"
+        android:label="@string/edit_manager_info"
+        tools:layout="@layout/fragment_representative_edit_manager_info_profile" />
+
+    <fragment
+        android:id="@+id/appointment_info"
+        android:name="com.mrep.representative.fragment.appointment.AppointmentInfoFragment"
+        android:label="@string/appointment_info"
+        tools:layout="@layout/fragment_representative_appointment_info" />
+
+    <fragment
+        android:id="@+id/doctor_details"
+        android:name="com.mrep.representative.fragment.doctorlist.doctordetail.DoctorDetailFragment"
+        android:label="@string/doctor_details"
+        tools:layout="@layout/fragment_doctor_doctor_details" >
+        <action
+            android:id="@+id/action_doctor_details_to_appointment_calendar"
+            app:destination="@id/appointment_calendar" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/appointment_calendar"
+        android:name="com.mrep.representative.fragment.doctorlist.doctordetail.DoctorAvailabilityCalendarFragment"
+        android:label="@string/doctor_details"
+        tools:layout="@layout/fragment_reprsentative_appointment_callplanner" />
+
+
+</navigation>

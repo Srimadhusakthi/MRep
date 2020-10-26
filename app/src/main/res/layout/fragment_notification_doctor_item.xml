@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-black"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/_8dsp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8dsp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loreum Ipsum is simple dummy text to printing and type setting industry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14dsp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dsp"
+            android:text="5 Oct 2020, 11:20 AM"
+            android:textSize="@dimen/_14dsp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_white"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/call_planner"
+        android:icon="@drawable/ic_video_call"
+        android:title="@string/call_planner" />
+    <item
+        android:id="@+id/appointment"
+        android:icon="@drawable/ic_bookmarks_white"
+        android:title="@string/appointment" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile_white"
+        android:title="@string/profile" />
+</menu>

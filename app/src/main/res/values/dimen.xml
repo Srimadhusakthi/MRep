@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_2dsp">2sp</dimen>
+    <dimen name="_3dsp">3sp</dimen>
+    <dimen name="_4dsp">4sp</dimen>
+    <dimen name="_5dsp">5sp</dimen>
+    <dimen name="_6dsp">6sp</dimen>
+    <dimen name="_7dsp">7sp</dimen>
+    <dimen name="_8dsp">8sp</dimen>
+    <dimen name="_9dsp">9sp</dimen>
+    <dimen name="_10dsp">10sp</dimen>
+    <dimen name="_12dsp">12sp</dimen>
+    <dimen name="_14dsp">14sp</dimen>
+    <dimen name="_16dsp">16sp</dimen>
+    <dimen name="_18dsp">18sp</dimen>
+    <dimen name="_20dsp">20sp</dimen>
+    <dimen name="_22dsp">22sp</dimen>
+    <dimen name="_24dsp">24sp</dimen>
+    <dimen name="_26dsp">26sp</dimen>
+    <dimen name="_50sp">50sp</dimen>
+    <dimen name="_60sp">60sp</dimen>
+    <dimen name="_70sp">70sp</dimen>
+    <dimen name="_80sp">80sp</dimen>
+    <dimen name="_90sp">90sp</dimen>
+    <dimen name="_100sp">100sp</dimen>
+    <dimen name="_150sp">150sp</dimen>
+    <dimen name="_200sp">200sp</dimen>
+    <dimen name="call_button_size">60dp</dimen>
+    <dimen name="other_button_size">54dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="local_preview_margin_top">28dp</dimen>
+    <dimen name="local_preview_margin_right">24dp</dimen>
+    <dimen name="control_bottom_horizontal_margin">16sp</dimen>
+    <dimen name="control_bottom_margin">16sp</dimen>
+    <dimen name="local_back_icon_size">28sp</dimen>
+    <dimen name="remote_back_icon_margin_bottom">28sp</dimen>
+    <dimen name="local_preview_width">100sp</dimen>
+    <dimen name="local_preview_height">100sp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

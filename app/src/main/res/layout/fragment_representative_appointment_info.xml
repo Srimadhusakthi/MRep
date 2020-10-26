@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_8dsp"
+    android:background="@color/white"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dsp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dsp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="@string/company"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="@string/division"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="GenMark"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/division_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="Max"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dsp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="@string/appointment_time"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="9:15 AM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dsp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="@string/meeting_link"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2dsp"
+                android:layout_weight="1"
+                android:text="Join Meeting URL"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14dsp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_8dsp"
+        android:layout_marginRight="@dimen/_8dsp"
+        android:layout_marginBottom="@dimen/_100sp"
+        android:layout_weight="1"
+        android:text="@string/doctor"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12dsp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/btn_bg" />
+
+</RelativeLayout>

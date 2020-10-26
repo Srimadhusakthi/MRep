@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Light">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/agenda_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dsp"
+        android:elevation="@dimen/_8dsp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8dsp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dsp"
+                android:background="@drawable/rectangle"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/_8dsp"
+                android:text="Oct 9"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16dsp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sub_event_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dayName"
+                android:layout_marginRight="@dimen/_8dsp"
+                android:layout_toRightOf="@+id/dayName" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

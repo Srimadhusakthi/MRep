@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_doctor_allinvites"
+        android:title="@string/allinvites" />
+    <item
+        android:id="@+id/nav_doctor_approved"
+        android:title="@string/approved" />
+    <item
+        android:id="@+id/nav_doctor_pending"
+        android:title="@string/pending" />
+    <item
+        android:id="@+id/nav_doctor_rejected"
+        android:title="@string/rejected" />
+    <item
+        android:id="@+id/nav_doctor_blocked"
+        android:title="@string/blocked" />
+</menu>
